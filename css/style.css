@@ -1,0 +1,289 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+ul,li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.hidden {
+    display: none;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+.container {
+    width: 1024px;
+    padding: 0 70px;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+/* HEADER BEGIN*/
+
+.header {
+    background-color: #525ea7;
+
+}
+
+.profile {
+    color: white;
+    padding: 58px 0 31px 10px;
+
+}
+
+.profile__portrait {
+    float: left;
+    width: 141px;
+    border-radius: 50%;
+    padding-top: 5px;
+}
+.profile__portrait img {
+    border-radius: inherit;
+}
+
+.profile__text {
+    float: left;
+    width: 480px;
+    padding-left: 29px;
+    padding-top: 27px;
+
+}
+
+.profile__contacts {
+    width: 190px;
+    float: right;
+}
+.profile__name  {
+    font-family: Montserrat;
+    font-size: 39px;
+    font-weight: 700;
+    letter-spacing: 2.0px;
+}
+.profile__vacancy {
+    padding-top: 2px;
+    font-size: 23px;
+    font-weight: 600;
+}
+
+
+.profile__list {
+    padding-left: 35px;
+}
+
+.profile__list > li > a {
+    font-size: 17.89px;
+    line-height: 25px;
+}
+.profile__item {
+    padding-bottom: 13px;
+}
+
+.profile__item--address, .profile__item--site, .profile__item--phone {
+    position: relative;
+}
+
+.profile__item--phone:before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f095";
+    font-size: 14px;
+    font-weight: 900;
+    position: absolute;
+    left: -29px;
+    top: 4px;
+ }
+
+ .profile__item--address:before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f3c5";
+    font-size: 14px;
+    font-weight: 900;
+    position: absolute;
+    left: -29px;
+    top: 4px;
+ }
+
+ .profile__item--site:before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f0ac";
+    font-size: 14px;
+    font-weight: 900;
+    position: absolute;
+    left: -29px;
+    top: 4px;
+ }
+
+ /* HEADER END*/
+
+ /* MAIN BEGIN*/
+
+ .sections-left {
+    width: 275px;
+    float: left;
+ }
+ .sections-right {
+    width: 600px;
+    float: left;
+    box-shadow: -52px -1px 332px -40px rgba(0,0,0,0.11);
+    padding-bottom: 42px;
+}
+
+
+
+.section-title {
+    font-family: Montserrat;
+    font-size: 26.01px;
+    margin-top: 43px;
+    font-weight: 600;
+    padding-left: 73px;
+    letter-spacing: -1.0px;
+    position: relative;
+}
+
+
+.section-title:before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f0b1";
+    font-size: 18px;
+    color: white;
+    background-color: #525ea7;
+    border-radius: 50%;
+    font-weight: 900;
+    position: absolute;
+    left: 8px;
+    top: -7px;
+    padding: 13px 14px;
+ }
+.profile-info__text {
+    font-size: 17.88px;
+    font-weight: 400;
+    padding-left: 10px;
+    padding-top: 24px;
+    line-height: 29px;
+}
+
+.interests__item {
+    display: inline-block;
+    font-size: 17.88px;
+    font-weight: 600;
+    padding-top: 96px;
+    text-align: center;
+    width: 77px;
+    padding-right: 9px;
+    position: relative;
+    padding-bottom: 5px;
+}
+
+.interests__item::before {
+    font-family: "Font Awesome 5 Free";
+    font-size: 22px;
+    color: #4b5abd;
+    border-radius: 50%;
+    font-weight: 900;
+    position: absolute;
+    border: 7px solid #4b5abd;
+    padding: 9px;
+    bottom: 42px;
+    left: 10px;
+
+}
+
+.interests__item--music:before {
+    content: "\f025";
+}
+
+.interests__item--gaming:before {
+    content: "\f11b";
+}
+
+.interests__item--biking:before {
+    content: "\f21c";
+}
+
+.reference__list {
+    padding-left: 47px;
+    padding-top: 22px;
+}
+
+.reference__item {
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 400;
+
+    position: relative;
+}
+
+.reference__item::before {
+    content: "";
+    width: 5px;
+    height: 5px;
+    left: -36px;
+    position: absolute;
+    top: 29px;
+    border-radius: 50%;
+    border: 8px solid #cccccc;
+}
+.reference__item:first-child {
+    padding-bottom: 31px;
+}
+
+.awwards__list {
+    padding-left: 11px;
+    padding-top: 23px;
+    margin-bottom: 47px;
+}
+
+.awwards__item {
+    font-size: 17.88px;
+    font-weight: 600;
+    line-height: 30px;
+}
+.portfolio-info__title {
+    padding-left: 100px;
+}
+
+.portfolio__list {
+    padding-left: 99px;
+    padding-top: 37px;
+}
+.portfolio__item {
+    display: inline-block;
+    width: 240px;
+    margin-bottom: 11px;
+    box-shadow: 0 0 6px rgba(0,0,0,0.1);
+
+
+}
+.portfolio__item:nth-child(2n+1) {
+    margin-right: 14px;
+}
+
+.portfolio__title {
+    margin-top: 16px;
+    font-size: 17.3px;
+    text-align: center;
+}
+
+.portfolio_text {
+    text-align: center;
+    margin-top: 5px; 
+    font-size: 600;
+    padding-bottom: 30px;
+}
+.footer {
+    background-color: #525ea7;
+    color: white;
+}
+
+.footer > div > p {
+    padding: 24px 0;
+    padding-left: 10px;
+}
